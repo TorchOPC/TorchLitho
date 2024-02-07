@@ -1176,7 +1176,7 @@ hydra:
 
 ## Resources
 
-OPC : 
+OPC : [OpenILT](https://github.com/OpenOPC/OpenILT)
 
 <br>
 
