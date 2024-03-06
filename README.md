@@ -7,32 +7,20 @@
 [![lightning](https://img.shields.io/badge/-Lightning_2.0+-792ee5?logo=pytorchlightning&logoColor=white)](https://pytorchlightning.ai/)
 [![hydra](https://img.shields.io/badge/Config-Hydra_1.3-89b8cd)](https://hydra.cc/)
 [![black](https://img.shields.io/badge/Code%20Style-Black-black.svg?labelColor=gray)](https://black.readthedocs.io/en/stable/)
-[![isort](https://img.shields.io/badge/%20imports-isort-%231674b1?style=flat&labelColor=ef8336)](https://pycqa.github.io/isort/) <br>
-[![tests](https://github.com/ashleve/lightning-hydra-template/actions/workflows/test.yml/badge.svg)](https://github.com/ashleve/lightning-hydra-template/actions/workflows/test.yml)
-[![code-quality](https://github.com/ashleve/lightning-hydra-template/actions/workflows/code-quality-main.yaml/badge.svg)](https://github.com/ashleve/lightning-hydra-template/actions/workflows/code-quality-main.yaml)
-[![codecov](https://codecov.io/gh/ashleve/lightning-hydra-template/branch/main/graph/badge.svg)](https://codecov.io/gh/ashleve/lightning-hydra-template) <br>
+<br>
+
 [![license](https://img.shields.io/badge/License-MIT-green.svg?labelColor=gray)](https://github.com/ashleve/lightning-hydra-template#license)
 [![PRs](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/ashleve/lightning-hydra-template/pulls)
 [![contributors](https://img.shields.io/github/contributors/ashleve/lightning-hydra-template.svg)](https://github.com/ashleve/lightning-hydra-template/graphs/contributors)
 
 
-
-<a href="https://pytorch.org/get-started/locally/"><img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-ee4c2c?logo=pytorch&logoColor=white"></a>
-<a href="https://pytorchlightning.ai/"><img alt="Lightning" src="https://img.shields.io/badge/-Lightning-792ee5?logo=pytorchlightning&logoColor=white"></a>
-<a href="https://hydra.cc/"><img alt="Config: Hydra" src="https://img.shields.io/badge/Config-Hydra-89b8cd"></a>
-
 </div>
 
-
-
- 🚀⚡🔥
 
 ## Description
 
 
-
 The rapid evolution of the electronics industry, driven by Moore's law and the proliferation of integrated circuits, has led to significant advancements in modern society, including the Internet, wireless communication, and artificial intelligence (AI). Central to this progress is optical lithography, a critical technology in semiconductor manufacturing that accounts for approximately 30\% to 40\% of production costs. As semiconductor nodes shrink and transistor numbers increase, optical lithography becomes increasingly vital in current integrated circuit (IC) fabrication technology. This repo introduces an open-source differentiable lithography imaging framework that leverages the principles of differentiable programming and the computational power of GPUs to enhance the precision of lithography modeling and simplify the optimization of resolution enhancement techniques (RETs). The framework models the core components of lithography as differentiable segments, allowing for the implementation of standard scalar imaging models, including the Abbe and Hopkins models, as well as their approximation models.
-
 
 
 ## Notes
@@ -59,7 +47,7 @@ conda activate myenv
 pip install -r requirements.txt
 ```
 
-#### Conda
+<details><summary>Using Conda</summary>
 
 ```bash
 # clone project
@@ -72,6 +60,10 @@ conda env create -f environment.yaml -n myenv
 # activate conda environment
 conda activate myenv
 ```
+</details>
+
+
+
 
 ## How to run
 
@@ -81,12 +73,6 @@ Train model with default configuration
 # Test the imaging
 cd src/models/litho
 python ImagingModel.py
-
-# train on CPU
-python src/train.py trainer=cpu
-
-# train on GPU
-python src/train.py trainer=gpu
 ```
 
 Train model with chosen experiment configuration from [configs/experiment/](configs/experiment/)
@@ -103,13 +89,38 @@ python src/train.py trainer.max_epochs=20 data.batch_size=64
 
 
 
+## Cited as
+
+
+
+```txt
+@inproceedings{SPIE24_difflitho,
+  title     = {Open-Source Differentiable Lithography Imaging Framework},
+  author    = {Chen, Guojin and Geng, Hao and Yu, Bei and Pan, David Z.},
+  booktitle = {Advanced Lithography + Patterning},
+  organization = {International Society for Optics and Photonics},
+  publisher    = {SPIE},
+  year      = {2024},
+  month     = {3},
+}
+```
+
+
+## Releated work
+
+> Guojin Chen, Hao Geng, Bei Yu, David Z. Pan, “Open-Source Differentiable Lithography Imaging Framework”, SPIE Advanced Lithography + Patterning, San Jose, Feb. 25–29, 2024. (paper)
+
+> Guojin Chen, Hongquan He, Peng Xu, Hao Geng, Bei Yu, “Efficient Bilevel Source Mask Optimization”, ACM/IEEE Design Automation Conference (DAC), San Francisco, Jun. 23–27, 2024. 
+
+
+> Guojin Chen, Zixiao Wang, Bei Yu, David Z. Pan, Martin D.F. Wong, “Ultra-Fast Source Mask Optimization via Conditional Discrete Diffusion”, accepted by IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD).
 
 
 
 
 
-
-**Why you might want to use it:**
+<details>
+<summary> **Why you might want to use it:** </summary>
 
 ✅ Save on boilerplate <br>
 Easily add new models, datasets, tasks, experiments, and train on different accelerators, like multi-GPU, TPU or SLURM clusters.
@@ -119,7 +130,7 @@ Thoroughly commented. You can use this repo as a learning resource.
 
 ✅ Reusability <br>
 Collection of useful MLOps tools, configs, and code snippets. You can use this repo as a reference for various utilities.
-
+</details>
 
 
 ## Main Technologies
@@ -134,6 +145,7 @@ Collection of useful MLOps tools, configs, and code snippets. You can use this r
 
 ## Main Ideas
 
+<details>
 - [**Rapid Experimentation**](#your-superpowers): thanks to hydra command line superpowers
 - [**Minimal Boilerplate**](#how-it-works): thanks to automating pipelines with config instantiation
 - [**Main Configs**](#main-config): allow you to specify default training configuration
@@ -145,10 +157,13 @@ Collection of useful MLOps tools, configs, and code snippets. You can use this r
 - [**Tests**](#tests): generic, easy-to-adapt smoke tests for speeding up the development
 - [**Continuous Integration**](#continuous-integration): automatically test and lint your repo with Github Actions
 - [**Best Practices**](#best-practices): a couple of recommended tools, practices and standards
+</details>
 
 <br>
 
 ## Project Structure
+
+<details>
 
 The directory structure of new project looks like this:
 
@@ -205,6 +220,8 @@ The directory structure of new project looks like this:
 └── README.md
 ```
 
+</details>
+
 <br>
 
 
@@ -213,6 +230,8 @@ The directory structure of new project looks like this:
 </div>
 
 ## ⚡  Your Superpowers
+
+<details>
 
 <details>
 <summary><b>Override any config parameter from command line</b></summary>
@@ -540,6 +559,7 @@ ValueError: Specify tags before launching a multirun!
 
 <br>
 
+</details>
 
 
 Suggestions for improvements are always welcome!
