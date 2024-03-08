@@ -3,7 +3,7 @@
 # Differentiable Lithogrpahy Framework
 
 
-<img src="./figs/torchlitho.png" width="80%">
+<img src="./misc/figs/torchlitho.png" width="80%">
 
 
 [![python](https://img.shields.io/badge/-Python_3.8_%7C_3.9_%7C_3.10-blue?logo=python&logoColor=white)](https://github.com/pre-commit/pre-commit)
@@ -26,6 +26,7 @@
 
 The rapid evolution of the electronics industry, driven by Moore's law and the proliferation of integrated circuits, has led to significant advancements in modern society, including the Internet, wireless communication, and artificial intelligence (AI). Central to this progress is optical lithography, a critical technology in semiconductor manufacturing that accounts for approximately 30\% to 40\% of production costs. As semiconductor nodes shrink and transistor numbers increase, optical lithography becomes increasingly vital in current integrated circuit (IC) fabrication technology. This repo introduces an open-source differentiable lithography imaging framework that leverages the principles of differentiable programming and the computational power of GPUs to enhance the precision of lithography modeling and simplify the optimization of resolution enhancement techniques (RETs). The framework models the core components of lithography as differentiable segments, allowing for the implementation of standard scalar imaging models, including the Abbe and Hopkins models, as well as their approximation models.
 
+[**Introduction slides**](./misc/slides/torchlitho.pdf)
 
 ## Notes
 
