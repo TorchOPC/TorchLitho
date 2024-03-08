@@ -15,7 +15,7 @@
 
 [![license](https://img.shields.io/badge/License-MIT-green.svg?labelColor=gray)](https://github.com/ashleve/lightning-hydra-template#license)
 [![PRs](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/ashleve/lightning-hydra-template/pulls)
-[![contributors](https://img.shields.io/github/contributors/ashleve/lightning-hydra-template.svg)](https://github.com/ashleve/lightning-hydra-template/graphs/contributors)
+[![contributors](https://img.shields.io/github/contributors/TorchOPC/TorchLitho.svg)](https://github.com/TorchOPC/TorchLitho/graphs/contributors)
 
 
 </div>
