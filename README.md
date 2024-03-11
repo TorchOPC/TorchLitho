@@ -1,6 +1,6 @@
 <div align="center">
 
-# Differentiable Lithogrpahy Framework
+# Differentiable Computational Lithogrpahy Framework
 
 
 <img src="./misc/figs/torchlitho.png" width="80%">
