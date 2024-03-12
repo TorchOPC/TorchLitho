@@ -802,7 +802,7 @@ There is also `@RunIf` decorator implemented, that allows you to run tests only 
 <br>
 
 ## Hyperparameter Search
-
+<details>
 You can define hyperparameter search by adding new config file to [configs/hparams_search](configs/hparams_search).
 
 <details>
@@ -857,35 +857,26 @@ You can use different optimization frameworks integrated with Hydra, like [Optun
 The `optimization_results.yaml` will be available under `logs/task_name/multirun` folder.
 
 This approach doesn't support resuming interrupted search and advanced techniques like prunning - for more sophisticated search and workflows, you should probably write a dedicated optimization task (without multirun feature).
-
+</details>
 <br>
 
 ## Continuous Integration
 
+<details>
 Template comes with CI workflows implemented in Github Actions:
 
 - `.github/workflows/test.yaml`: running all tests with pytest
 - `.github/workflows/code-quality-main.yaml`: running pre-commits on main branch for all files
 - `.github/workflows/code-quality-pr.yaml`: running pre-commits on pull requests for modified files only
 
+</details>
 <br>
 
-## Distributed Training
 
-Lightning supports multiple ways of doing distributed training. The most common one is DDP, which spawns separate process for each GPU and averages gradients between them. To learn about other approaches read the [lightning docs](https://pytorch-lightning.readthedocs.io/en/latest/advanced/multi_gpu.html).
-
-You can run DDP on mnist example with 4 GPUs like this:
-
-```bash
-python train.py trainer=ddp
-```
-
-> **Note**: When using DDP you have to be careful how you write your models - read the [docs](https://pytorch-lightning.readthedocs.io/en/latest/advanced/multi_gpu.html).
-
-<br>
 
 ## Accessing Datamodule Attributes In Model
 
+<details>
 The simplest way is to pass datamodule attribute directly to model on initialization:
 
 ```python
@@ -921,11 +912,11 @@ def on_train_start(self):
 ```
 
 > **Note**: This only works after the training starts since otherwise trainer won't be yet available in LightningModule.
-
+</details>
 <br>
 
 ## Best Practices
-
+<details>
 <details>
 <summary><b>Use Miniconda</b></summary>
 
@@ -1197,7 +1188,7 @@ hydra:
 ```
 
 </details>
-
+</details>
 <br>
 
 ## Resources
