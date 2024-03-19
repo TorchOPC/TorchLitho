@@ -111,17 +111,30 @@ python src/train.py trainer.max_epochs=20 data.batch_size=64
 ```
 
 
+
+
 ## Releated work
 
-> Guojin Chen, Hao Geng, Bei Yu, David Z. Pan, “Open-Source Differentiable Lithography Imaging Framework”, SPIE Advanced Lithography + Patterning, San Jose, Feb. 25–29, 2024. (paper)
+[Guojin Chen](https://gjchen.me/), Hao Geng, Bei Yu, David Z. Pan, “[Open-Source Differentiable Lithography Imaging Framework](https://www.cse.cuhk.edu.hk/~byu/papers/C201-SPIE2024-OpenLitho.pdf)”, SPIE Advanced Lithography + Patterning, San Jose, Feb. 25–29, 2024. ([paper](https://www.cse.cuhk.edu.hk/~byu/papers/C201-SPIE2024-OpenLitho.pdf)) ([slides](https://www.cse.cuhk.edu.hk/~byu/papers/C201-SPIE2024-OpenLitho-slides.pdf)) 
 
-> Guojin Chen, Hongquan He, Peng Xu, Hao Geng, Bei Yu, “Efficient Bilevel Source Mask Optimization”, ACM/IEEE Design Automation Conference (DAC), San Francisco, Jun. 23–27, 2024. 
+[Guojin Chen](https://gjchen.me/), Hongquan He, Peng Xu, Hao Geng, Bei Yu, “Efficient Bilevel Source Mask Optimization”, ACM/IEEE Design Automation Conference (DAC), San Francisco, Jun. 23–27, 2024. 
 
-
-> Guojin Chen, Zixiao Wang, Bei Yu, David Z. Pan, Martin D.F. Wong, “Ultra-Fast Source Mask Optimization via Conditional Discrete Diffusion”, accepted by IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD).
-
+[Guojin Chen](https://gjchen.me/), Zixiao Wang, Bei Yu, David Z. Pan, Martin D.F. Wong, “[Ultra-Fast Source Mask Optimization via Conditional Discrete Diffusion](https://ieeexplore.ieee.org/document/10419017)”, accepted by IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD).
 
 
+```txt
+@ARTICLE{DiffSMO-chen-2024,
+  author={Chen, Guojin and Wang, Zixiao and Yu, Bei and Pan, David Z. and Wong, Martin D.F.},
+  journal={IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems}, 
+  title={Ultra-Fast Source Mask Optimization via Conditional Discrete Diffusion}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={1-1},
+  keywords={Optimization;Lithography;Lighting;Integrated circuits;Graphics processing units;Optical imaging;Resists},
+  doi={10.1109/TCAD.2024.3361400}
+}
+```
 
 
 <details>
