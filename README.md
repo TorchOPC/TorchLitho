@@ -20,6 +20,12 @@
 
 </div>
 
+## TL;DR
+
+- **First** open-source differentiable Abbe lithography imaging model. (With Hopkins / TCC model included)
+- **First** open-source analytical resist development model.
+- **First** open-source vector lithography implementation (work in progress).
+
 
 ## Description
 
