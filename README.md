@@ -121,7 +121,7 @@ python src/train.py trainer.max_epochs=20 data.batch_size=64
 
 ## Releated work
 
-[Guojin Chen](https://gjchen.me/), Hao Geng, Bei Yu, David Z. Pan, “[Open-Source Differentiable Lithography Imaging Framework](https://www.cse.cuhk.edu.hk/~byu/papers/C201-SPIE2024-OpenLitho.pdf)”, SPIE Advanced Lithography + Patterning, San Jose, Feb. 25–29, 2024. ([paper](https://www.cse.cuhk.edu.hk/~byu/papers/C201-SPIE2024-OpenLitho.pdf)) ([slides](https://www.cse.cuhk.edu.hk/~byu/papers/C201-SPIE2024-OpenLitho-slides.pdf)) 
+[Guojin Chen](https://gjchen.me/), Hao Geng, Bei Yu, David Z. Pan, “[Open-Source Differentiable Lithography Imaging Framework](https://arxiv.org/abs/2409.15306)”, SPIE Advanced Lithography + Patterning, San Jose, Feb. 25–29, 2024. ([paper](https://arxiv.org/abs/2409.15306)) ([slides](https://www.cse.cuhk.edu.hk/~byu/papers/C201-SPIE2024-OpenLitho-slides.pdf)) 
 
 [Guojin Chen](https://gjchen.me/), Hongquan He, Peng Xu, Hao Geng, Bei Yu, “Efficient Bilevel Source Mask Optimization”, ACM/IEEE Design Automation Conference (DAC), San Francisco, Jun. 23–27, 2024.
 
